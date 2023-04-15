@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		932AA2F229EAD91F00C34F67 /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AA2F129EAD91F00C34F67 /* OrderView.swift */; };
+		932AA2F429EAD96D00C34F67 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AA2F329EAD96D00C34F67 /* MenuView.swift */; };
+		932AA2F629EAD98500C34F67 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AA2F529EAD98500C34F67 /* MenuItemView.swift */; };
+		932AA2F829EAD98F00C34F67 /* MenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AA2F729EAD98F00C34F67 /* MenuRowView.swift */; };
+		932AA2FA29EAD99900C34F67 /* OrderRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AA2F929EAD99900C34F67 /* OrderRowView.swift */; };
+		932AA2FC29EAD9A000C34F67 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AA2FB29EAD9A000C34F67 /* HeaderView.swift */; };
+		932AA2FE29EADD9700C34F67 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932AA2FD29EADD9700C34F67 /* RatingView.swift */; };
 		9330A6F429E3CC7100366B2F /* PizzaPlazaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330A6F329E3CC7100366B2F /* PizzaPlazaApp.swift */; };
 		9330A6F629E3CC7100366B2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330A6F529E3CC7100366B2F /* ContentView.swift */; };
 		9330A6F829E3CC7200366B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9330A6F729E3CC7200366B2F /* Assets.xcassets */; };
@@ -14,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		932AA2F129EAD91F00C34F67 /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
+		932AA2F329EAD96D00C34F67 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		932AA2F529EAD98500C34F67 /* MenuItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemView.swift; sourceTree = "<group>"; };
+		932AA2F729EAD98F00C34F67 /* MenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRowView.swift; sourceTree = "<group>"; };
+		932AA2F929EAD99900C34F67 /* OrderRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderRowView.swift; sourceTree = "<group>"; };
+		932AA2FB29EAD9A000C34F67 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		932AA2FD29EADD9700C34F67 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		9330A6F029E3CC7100366B2F /* PizzaPlaza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzaPlaza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9330A6F329E3CC7100366B2F /* PizzaPlazaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaPlazaApp.swift; sourceTree = "<group>"; };
 		9330A6F529E3CC7100366B2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +67,13 @@
 			children = (
 				9330A6F329E3CC7100366B2F /* PizzaPlazaApp.swift */,
 				9330A6F529E3CC7100366B2F /* ContentView.swift */,
+				932AA2FB29EAD9A000C34F67 /* HeaderView.swift */,
+				932AA2F129EAD91F00C34F67 /* OrderView.swift */,
+				932AA2F929EAD99900C34F67 /* OrderRowView.swift */,
+				932AA2F529EAD98500C34F67 /* MenuItemView.swift */,
+				932AA2F729EAD98F00C34F67 /* MenuRowView.swift */,
+				932AA2F329EAD96D00C34F67 /* MenuView.swift */,
+				932AA2FD29EADD9700C34F67 /* RatingView.swift */,
 				9330A6F729E3CC7200366B2F /* Assets.xcassets */,
 				9330A6F929E3CC7200366B2F /* Preview Content */,
 			);
@@ -137,8 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932AA2F229EAD91F00C34F67 /* OrderView.swift in Sources */,
+				932AA2F429EAD96D00C34F67 /* MenuView.swift in Sources */,
 				9330A6F629E3CC7100366B2F /* ContentView.swift in Sources */,
+				932AA2FE29EADD9700C34F67 /* RatingView.swift in Sources */,
 				9330A6F429E3CC7100366B2F /* PizzaPlazaApp.swift in Sources */,
+				932AA2F829EAD98F00C34F67 /* MenuRowView.swift in Sources */,
+				932AA2FA29EAD99900C34F67 /* OrderRowView.swift in Sources */,
+				932AA2F629EAD98500C34F67 /* MenuItemView.swift in Sources */,
+				932AA2FC29EAD9A000C34F67 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
