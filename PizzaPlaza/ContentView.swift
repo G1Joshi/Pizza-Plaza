@@ -9,15 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var orders: [Int] = [1, 2, 3]
+    var showOrders: Bool = false
 
     var body: some View {
         VStack {
             HeaderView()
-            OrderView(orders: orders)
-            MenuItemView()
-            MenuView()
+                .shadow(radius: 5)
+            if showOrders {
+                OrderView(orders: orders)
+                    .cornerRadius(15)
+            } else {
+                MenuItemView()
+                    .padding(5)
+                    .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 15))
+                MenuView()
+            }
         }
         .padding()
+        .background(.linearGradient(colors: [.cyan, Color("surf"), Color("sky"), .white], startPoint: .topLeading, endPoint: .bottomTrailing))
     }
 }
 
