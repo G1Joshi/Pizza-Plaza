@@ -8,16 +8,19 @@
 import SwiftUI
 
 struct MenuItemView: View {
+    @State private var addedItems: Bool = false
+    @Binding var item: MenuItem
+
     var body: some View {
         VStack {
             HStack {
-                Text("Margherita")
+                Text(item.name)
                     .font(.title)
                     .fontWeight(.semibold)
                     .foregroundStyle(.ultraThickMaterial)
                     .fontWeight(.semibold)
                     .padding(.leading)
-                if let image = UIImage(named: "0_lg") {
+                if let image = UIImage(named: "\(item.id)_lg") {
                     Image(uiImage: image)
                         .resizable()
                         .scaledToFit()
@@ -34,16 +37,28 @@ struct MenuItemView: View {
             .shadow(color: .teal, radius: 5, x: 10, y: 10)
             VStack(alignment: .leading) {
                 ScrollView {
-                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in leo nec est euismod ornare. Phasellus ornare, libero ac commodo lacinia, sem lectus condimentum urna, eget fermentum diam arcu et nisi. Cras id lectus sed massa dapibus sodales. Duis lorem metus, vulputate ut dolor at, dapibus faucibus sem. Pellentesque a.")
+                    Text(item.description)
                         .font(.custom("Georgia", size: 18, relativeTo: .body))
                 }
             }
+            Button {
+                addedItems = true
+            } label: {
+                Spacer()
+                Text(00.00, format: .currency(code: "INR")).bold()
+                Image(systemName: addedItems ? "cart.fill.badge.plus" : "cart.badge.plus")
+                Spacer()
+            }
+            .padding()
+            .background(.red, in: Capsule())
+            .foregroundStyle(.white)
+            .padding(5)
         }
     }
 }
 
 struct MenuItemView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuItemView()
+        MenuItemView(item: .constant(testMenuItem))
     }
 }

@@ -18,6 +18,11 @@
 		9330A6F629E3CC7100366B2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330A6F529E3CC7100366B2F /* ContentView.swift */; };
 		9330A6F829E3CC7200366B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9330A6F729E3CC7200366B2F /* Assets.xcassets */; };
 		9330A6FB29E3CC7200366B2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9330A6FA29E3CC7200366B2F /* Preview Assets.xcassets */; };
+		93F6649C29EBD1D500FA6BE5 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6649829EBD1D500FA6BE5 /* OrderModel.swift */; };
+		93F6649D29EBD1D500FA6BE5 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6649929EBD1D500FA6BE5 /* MenuItem.swift */; };
+		93F6649E29EBD1D500FA6BE5 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6649A29EBD1D500FA6BE5 /* OrderItem.swift */; };
+		93F6649F29EBD1D500FA6BE5 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6649B29EBD1D500FA6BE5 /* MenuModel.swift */; };
+		93F664A129EBE9C400FA6BE5 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 93F664A029EBE9C400FA6BE5 /* Data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +38,11 @@
 		9330A6F529E3CC7100366B2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9330A6F729E3CC7200366B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9330A6FA29E3CC7200366B2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		93F6649829EBD1D500FA6BE5 /* OrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
+		93F6649929EBD1D500FA6BE5 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
+		93F6649A29EBD1D500FA6BE5 /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		93F6649B29EBD1D500FA6BE5 /* MenuModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		93F664A029EBE9C400FA6BE5 /* Data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,7 @@
 				932AA2F729EAD98F00C34F67 /* MenuRowView.swift */,
 				932AA2F329EAD96D00C34F67 /* MenuView.swift */,
 				932AA2FD29EADD9700C34F67 /* RatingView.swift */,
+				93F6649729EBD1D500FA6BE5 /* Model */,
 				9330A6F729E3CC7200366B2F /* Assets.xcassets */,
 				9330A6F929E3CC7200366B2F /* Preview Content */,
 			);
@@ -86,6 +97,18 @@
 				9330A6FA29E3CC7200366B2F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		93F6649729EBD1D500FA6BE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93F6649829EBD1D500FA6BE5 /* OrderModel.swift */,
+				93F6649929EBD1D500FA6BE5 /* MenuItem.swift */,
+				93F6649A29EBD1D500FA6BE5 /* OrderItem.swift */,
+				93F6649B29EBD1D500FA6BE5 /* MenuModel.swift */,
+				93F664A029EBE9C400FA6BE5 /* Data.json */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +171,7 @@
 			files = (
 				9330A6FB29E3CC7200366B2F /* Preview Assets.xcassets in Resources */,
 				9330A6F829E3CC7200366B2F /* Assets.xcassets in Resources */,
+				93F664A129EBE9C400FA6BE5 /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,11 +184,15 @@
 			files = (
 				932AA2F229EAD91F00C34F67 /* OrderView.swift in Sources */,
 				932AA2F429EAD96D00C34F67 /* MenuView.swift in Sources */,
+				93F6649C29EBD1D500FA6BE5 /* OrderModel.swift in Sources */,
 				9330A6F629E3CC7100366B2F /* ContentView.swift in Sources */,
 				932AA2FE29EADD9700C34F67 /* RatingView.swift in Sources */,
+				93F6649E29EBD1D500FA6BE5 /* OrderItem.swift in Sources */,
 				9330A6F429E3CC7100366B2F /* PizzaPlazaApp.swift in Sources */,
 				932AA2F829EAD98F00C34F67 /* MenuRowView.swift in Sources */,
 				932AA2FA29EAD99900C34F67 /* OrderRowView.swift in Sources */,
+				93F6649F29EBD1D500FA6BE5 /* MenuModel.swift in Sources */,
+				93F6649D29EBD1D500FA6BE5 /* MenuItem.swift in Sources */,
 				932AA2F629EAD98500C34F67 /* MenuItemView.swift in Sources */,
 				932AA2FC29EAD9A000C34F67 /* HeaderView.swift in Sources */,
 			);
