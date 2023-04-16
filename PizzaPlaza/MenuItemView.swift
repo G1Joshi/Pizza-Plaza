@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MenuItemView: View {
     @State private var addedItems: Bool = false
+    @ObservedObject var orders: OrderModel
     @Binding var item: MenuItem
 
     var body: some View {
@@ -43,12 +44,14 @@ struct MenuItemView: View {
             }
             Button {
                 addedItems = true
+                orders.addOrder(item, quantity: 1)
             } label: {
                 Spacer()
-                Text(00.00, format: .currency(code: "INR")).bold()
+                Text(item.price, format: .currency(code: "INR")).bold()
                 Image(systemName: addedItems ? "cart.fill.badge.plus" : "cart.badge.plus")
                 Spacer()
             }
+            .disabled(item.id < 0)
             .padding()
             .background(.red, in: Capsule())
             .foregroundStyle(.white)
@@ -59,6 +62,6 @@ struct MenuItemView: View {
 
 struct MenuItemView_Previews: PreviewProvider {
     static var previews: some View {
-        MenuItemView(item: .constant(testMenuItem))
+        MenuItemView(orders: OrderModel(), item: .constant(testMenuItem))
     }
 }

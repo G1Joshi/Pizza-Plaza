@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var menu: [MenuItem]
 
-    @State private var orders: [OrderItem] = testOrders
+    @StateObject var orders: OrderModel = OrderModel()
     @State private var selectedItem: MenuItem = noMenuItem
     @State private var showOrders: Bool = false
 
@@ -18,22 +18,13 @@ struct ContentView: View {
         VStack {
             HeaderView()
                 .shadow(radius: 5)
-            HStack {
-                Text("\(orders.count) orders")
-                Spacer()
-                Button(action: {
-                    showOrders.toggle()
-                }, label: {
-                    Image(systemName: showOrders ? "cart" : "menucard")
-                })
-            }
-            .foregroundStyle(.white)
-            .font(.title2)
+                .environment(\.colorScheme, .light)
+            StatusBarView(showOrders: $showOrders)
             if showOrders {
-                OrderView(orders: $orders)
+                OrderView(orders: orders)
                     .cornerRadius(15)
             } else {
-                MenuItemView(item: $selectedItem)
+                MenuItemView(orders: orders, item: $selectedItem)
                     .padding(5)
                     .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 15))
                 MenuView(menu: menu, selectedItem: $selectedItem)
@@ -41,6 +32,7 @@ struct ContentView: View {
         }
         .padding()
         .background(.linearGradient(colors: [.cyan, Color("surf"), Color("sky"), .white], startPoint: .topLeading, endPoint: .bottomTrailing))
+        .environmentObject(orders)
     }
 }
 

@@ -5,14 +5,16 @@
 //  Created by Jeevan Chandra Joshi on 16/04/23.
 //
 
+import Foundation
+
 enum OrderType: String, CaseIterable {
     case takeout = "Takeout"
     case dineIn = "Dining In"
     case delivery = "Delivery"
 }
 
-class OrderModel {
-    var orderItems: [OrderItem] = []
+class OrderModel: ObservableObject {
+    @Published var orderItems: [OrderItem] = []
     var customerName = "Customer Name"
     var orderType: OrderType = .takeout
     private var lastID: Int = 0

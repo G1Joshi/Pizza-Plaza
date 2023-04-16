@@ -18,6 +18,7 @@
 		9330A6F629E3CC7100366B2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9330A6F529E3CC7100366B2F /* ContentView.swift */; };
 		9330A6F829E3CC7200366B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9330A6F729E3CC7200366B2F /* Assets.xcassets */; };
 		9330A6FB29E3CC7200366B2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9330A6FA29E3CC7200366B2F /* Preview Assets.xcassets */; };
+		937C083029ECF89100E02622 /* StatusBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937C082F29ECF89100E02622 /* StatusBarView.swift */; };
 		93F6649C29EBD1D500FA6BE5 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6649829EBD1D500FA6BE5 /* OrderModel.swift */; };
 		93F6649D29EBD1D500FA6BE5 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6649929EBD1D500FA6BE5 /* MenuItem.swift */; };
 		93F6649E29EBD1D500FA6BE5 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6649A29EBD1D500FA6BE5 /* OrderItem.swift */; };
@@ -38,6 +39,7 @@
 		9330A6F529E3CC7100366B2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9330A6F729E3CC7200366B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9330A6FA29E3CC7200366B2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		937C082F29ECF89100E02622 /* StatusBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarView.swift; sourceTree = "<group>"; };
 		93F6649829EBD1D500FA6BE5 /* OrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 		93F6649929EBD1D500FA6BE5 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		93F6649A29EBD1D500FA6BE5 /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				9330A6F329E3CC7100366B2F /* PizzaPlazaApp.swift */,
 				9330A6F529E3CC7100366B2F /* ContentView.swift */,
 				932AA2FB29EAD9A000C34F67 /* HeaderView.swift */,
+				937C082F29ECF89100E02622 /* StatusBarView.swift */,
 				932AA2F129EAD91F00C34F67 /* OrderView.swift */,
 				932AA2F929EAD99900C34F67 /* OrderRowView.swift */,
 				932AA2F529EAD98500C34F67 /* MenuItemView.swift */,
@@ -192,6 +195,7 @@
 				932AA2F829EAD98F00C34F67 /* MenuRowView.swift in Sources */,
 				932AA2FA29EAD99900C34F67 /* OrderRowView.swift in Sources */,
 				93F6649F29EBD1D500FA6BE5 /* MenuModel.swift in Sources */,
+				937C083029ECF89100E02622 /* StatusBarView.swift in Sources */,
 				93F6649D29EBD1D500FA6BE5 /* MenuItem.swift in Sources */,
 				932AA2F629EAD98500C34F67 /* MenuItemView.swift in Sources */,
 				932AA2FC29EAD9A000C34F67 /* HeaderView.swift in Sources */,
