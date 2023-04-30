@@ -16,15 +16,12 @@ struct ContentView: View {
     @State private var presentGrid: Bool = false
 
     var body: some View {
-        VStack {
-            HeaderView()
-                .shadow(radius: 5)
-                .environment(\.colorScheme, .light)
-            StatusBarView(showOrders: $showOrders, presentGrid: $presentGrid)
-            if showOrders {
-                OrderView(orders: orders)
-                    .cornerRadius(15)
-            } else {
+        TabView {
+            VStack {
+                HeaderView()
+                    .shadow(radius: 5)
+                    .environment(\.colorScheme, .light)
+                StatusBarView(showOrders: $showOrders, presentGrid: $presentGrid)
                 MenuItemView(orders: orders, item: $selectedItem)
                     .padding(5)
                     .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 15))
@@ -33,6 +30,20 @@ struct ContentView: View {
                 } else {
                     MenuView(menu: menu, selectedItem: $selectedItem)
                 }
+            }
+            .tabItem {
+                Label("Menu", systemImage: "list.bullet")
+            }
+            VStack {
+                HeaderView()
+                    .shadow(radius: 5)
+                    .environment(\.colorScheme, .light)
+                StatusBarView(showOrders: $showOrders, presentGrid: $presentGrid)
+                OrderView(orders: orders)
+                    .cornerRadius(15)
+            }
+            .tabItem {
+                Label("Order", systemImage: "cart")
             }
         }
         .padding()

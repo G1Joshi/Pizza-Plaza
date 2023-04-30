@@ -5,7 +5,7 @@
 //  Created by Jeevan Chandra Joshi on 16/04/23.
 //
 
-struct OrderItem: Identifiable {
+struct OrderItem: Identifiable, Hashable {
     var id: Int
     var item: MenuItem
     var quantity: Int

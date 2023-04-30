@@ -22,6 +22,7 @@
 		93D6E17D29FE98840030C48B /* FavoriteTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D6E17C29FE98840030C48B /* FavoriteTileView.swift */; };
 		93D6E17F29FE98B10030C48B /* MenuGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D6E17E29FE98B10030C48B /* MenuGridView.swift */; };
 		93D6E18129FE98D50030C48B /* MenuItemTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D6E18029FE98D50030C48B /* MenuItemTileView.swift */; };
+		93D6E18529FE9DA90030C48B /* OrderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D6E18429FE9DA90030C48B /* OrderDetailView.swift */; };
 		93F6649C29EBD1D500FA6BE5 /* OrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6649829EBD1D500FA6BE5 /* OrderModel.swift */; };
 		93F6649D29EBD1D500FA6BE5 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6649929EBD1D500FA6BE5 /* MenuItem.swift */; };
 		93F6649E29EBD1D500FA6BE5 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F6649A29EBD1D500FA6BE5 /* OrderItem.swift */; };
@@ -46,6 +47,7 @@
 		93D6E17C29FE98840030C48B /* FavoriteTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTileView.swift; sourceTree = "<group>"; };
 		93D6E17E29FE98B10030C48B /* MenuGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuGridView.swift; sourceTree = "<group>"; };
 		93D6E18029FE98D50030C48B /* MenuItemTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuItemTileView.swift; sourceTree = "<group>"; };
+		93D6E18429FE9DA90030C48B /* OrderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailView.swift; sourceTree = "<group>"; };
 		93F6649829EBD1D500FA6BE5 /* OrderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderModel.swift; sourceTree = "<group>"; };
 		93F6649929EBD1D500FA6BE5 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
 		93F6649A29EBD1D500FA6BE5 /* OrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				937C082F29ECF89100E02622 /* StatusBarView.swift */,
 				932AA2F129EAD91F00C34F67 /* OrderView.swift */,
 				932AA2F929EAD99900C34F67 /* OrderRowView.swift */,
+				93D6E18429FE9DA90030C48B /* OrderDetailView.swift */,
 				932AA2F529EAD98500C34F67 /* MenuItemView.swift */,
 				932AA2F729EAD98F00C34F67 /* MenuRowView.swift */,
 				932AA2F329EAD96D00C34F67 /* MenuView.swift */,
@@ -202,6 +205,7 @@
 				932AA2FE29EADD9700C34F67 /* RatingView.swift in Sources */,
 				93F6649E29EBD1D500FA6BE5 /* OrderItem.swift in Sources */,
 				93D6E18129FE98D50030C48B /* MenuItemTileView.swift in Sources */,
+				93D6E18529FE9DA90030C48B /* OrderDetailView.swift in Sources */,
 				9330A6F429E3CC7100366B2F /* PizzaPlazaApp.swift in Sources */,
 				932AA2F829EAD98F00C34F67 /* MenuRowView.swift in Sources */,
 				932AA2FA29EAD99900C34F67 /* OrderRowView.swift in Sources */,
